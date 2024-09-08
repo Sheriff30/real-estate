@@ -1,0 +1,123 @@
+:root {
+  --color-primary: #ffcd11;
+  --color-secondary: #000000;
+  --color-black: #000000;
+  --color-white: #fff;
+  --color-primary-rgb: 255, 205, 17;
+  --color-secondary-rgb: 0, 0, 0;
+}
+
+.container-xxl {
+  max-width: 1700px;
+}
+
+.navbar-brand {
+  color: var(--color-primary) !important;
+}
+
+.dropdown-user {
+  left: auto !important;
+  right: 0;
+  width: 350px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border: none;
+  outline: none;
+  color: var(--color-secondary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.toggle-btn:hover {
+  background-color: var(--color-primary);
+}
+
+.activities-btn {
+  text-align: start;
+  border: none;
+  outline: none;
+}
+
+.nav-link {
+  color: var(--color-white) !important;
+}
+
+.navbar {
+  background-color: var(--color-secondary);
+}
+
+.hero-section {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(
+      TO bottom right,
+      rgba(var(--color-secondary-rgb), 0.5),
+      rgba(var(--color-secondary-rgb), 0.5)
+    ),
+    url(hero-img.jpeg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.search-box {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  padding: 2rem;
+}
+
+.search-box .container-xxl {
+  padding: 2rem;
+  border-radius: 9px;
+  background-color: #00000080;
+}
+
+.search-box .container-xxl h4 {
+  color: #ffff;
+}
+
+form[role="search"] .btn {
+  color: var(--color-secondary) !important;
+}
+
+input[type="search"]:focus {
+  outline: none;
+  box-shadow: none;
+  border: var(--color-primary) 1px solid;
+}
+input[type="radio"] + label {
+  color: var(--color-black) !important;
+  border-color: #ffcd11 !important;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ffcd11 !important;
+  border-color: #ffcd11;
+}
+
+.btn-group {
+  background-color: #fff;
+}
+@media only screen and (max-width: 991.98px) {
+  .dropdown-user {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+}
