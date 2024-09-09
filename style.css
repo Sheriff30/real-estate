@@ -216,7 +216,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .footer-nav-links {
@@ -280,6 +280,7 @@ footer {
 
   .footer-container {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .footer-nav {
