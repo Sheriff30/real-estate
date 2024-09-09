@@ -73,7 +73,6 @@
   object-fit: cover;
   background-repeat: no-repeat;
   position: relative;
-  margin-bottom: 4rem;
 }
 
 .navbar-toggler-icon {
@@ -82,10 +81,10 @@
 
 .hero-section .container-xxl {
   position: absolute;
-  top: 80%;
+  top: 50%;
   width: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .search-box {
@@ -269,9 +268,6 @@ footer {
     gap: 1rem;
   }
 
-  .hero-section {
-    margin-bottom: 13rem;
-  }
   .slider-item {
     width: 270px;
   }
