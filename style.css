@@ -9,6 +9,7 @@
 
 .container-xxl {
   max-width: 1700px;
+  padding: 0 7rem;
 }
 
 .navbar-brand {
@@ -74,20 +75,21 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.search-box {
+.hero-section .container-xxl {
   position: absolute;
-  width: 100%;
   top: 80%;
-  padding: 2rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.search-box .container-xxl {
+.search-box {
   padding: 2rem;
   border-radius: 9px;
   background-color: #00000080;
 }
 
-.search-box .container-xxl h4 {
+.search-box h4 {
   color: #ffff;
 }
 
@@ -245,6 +247,9 @@ footer {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .container-xxl {
+    padding: 0 1.5rem;
+  }
   .dropdown-user {
     width: 100%;
   }
