@@ -9,6 +9,7 @@
 
 .container-xxl {
   max-width: 90vw;
+  padding: 0 32px;
 }
 
 .navbar-brand {
@@ -39,6 +40,11 @@
 
 .toggle-btn:hover {
   background-color: var(--color-primary);
+}
+
+.bi-geo-alt,
+.bi-buildings {
+  color: var(--color-primary);
 }
 
 .activities-btn {
@@ -187,7 +193,7 @@ input[type="radio"]:checked + label {
   justify-content: space-between;
   color: var(--color-secondary);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -198,17 +204,17 @@ input[type="radio"]:checked + label {
 .proprites-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 2rem;
 }
 
 footer {
-  background-color: var(--color-secondary);
-  color: #ffff;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .logo {
   font-size: 2rem;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -226,7 +232,7 @@ footer {
 }
 
 .footer-nav-links a {
-  color: var(--color-white);
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
@@ -241,13 +247,13 @@ footer {
 }
 
 .footer-social a {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 25px;
 }
 
 @media only screen and (max-width: 991.98px) {
   .container-xxl {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     max-width: 100vw;
   }
   .dropdown-user {

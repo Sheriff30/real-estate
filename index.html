@@ -39,7 +39,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-xxl">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">Real state CO.</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,8 +53,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-search"></i>
+                <span> Search </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -64,7 +82,29 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                <i class="bi bi-globe"></i>
+                <span> Know </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-list-task"></i>
+                <span> List </span>
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -99,14 +139,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     class="btn btn-primary"
                     role="button"
                     data-bs-toggle="button"
-                    >Toggle link</a
+                    >Login</a
                   >
                   <a
                     href="#"
                     class="btn btn-secondary"
                     role="button"
                     data-bs-toggle="button"
-                    >Toggle link</a
+                    >Sign up</a
                   >
                 </div>
                 <li><hr class="dropdown-divider" /></li>
@@ -117,15 +157,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     class="btn toggle-btn activities-btn"
                     role="button"
                     data-bs-toggle="button"
-                    >Toggle link</a
                   >
+                    <i class="bi bi-heart"></i>
+                    <span> My Favourite </span>
+                  </a>
                   <a
                     href="#"
                     class="btn toggle-btn activities-btn"
                     role="button"
                     data-bs-toggle="button"
-                    >Toggle link</a
                   >
+                    <i class="bi bi-sticky"></i>
+                    <span> My Notes </span>
+                  </a>
                 </div>
               </ul>
             </li>
@@ -152,9 +196,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 autocomplete="off"
                 checked
               />
-              <label class="btn btn-outline-primary" for="btnradio1"
-                >Radio 1</label
-              >
+              <label class="btn btn-outline-primary" for="btnradio1">
+                <i class="bi bi-cash-stack"></i> <span> For Sale </span>
+              </label>
 
               <input
                 type="radio"
@@ -163,17 +207,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 id="btnradio2"
                 autocomplete="off"
               />
-              <label class="btn btn-outline-primary" for="btnradio2"
-                >Radio 2</label
-              >
+              <label class="btn btn-outline-primary" for="btnradio2">
+                <i class="bi bi-coin"></i>
+                <span> For Rent </span>
+              </label>
             </div>
             <form class="d-flex flex-grow-1" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-geo-alt"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control me-2"
+                  placeholder="City or Neighborhood or Street name"
+                  aria-label="Search"
+                />
+              </div>
+
               <button class="btn btn-primary" type="submit">Search</button>
             </form>
           </div>
@@ -198,11 +249,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <h4 class="h4">Sarai</h4>
                       <p class="mb-1">
                         <i class="bi bi-geo-alt"></i>
-                        <span> Location </span>
+                        <span> New Cairo </span>
                       </p>
                       <p class="mb-1">
                         <i class="bi bi-buildings"></i>
-                        <span>Informations</span>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
                       </p>
                       <p><strong>Starts from 400,000,000</strong></p>
                     </div>
@@ -217,11 +271,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <h4 class="h4">Sarai</h4>
                       <p class="mb-1">
                         <i class="bi bi-geo-alt"></i>
-                        <span> Location </span>
+                        <span> New Cairo </span>
                       </p>
                       <p class="mb-1">
                         <i class="bi bi-buildings"></i>
-                        <span>Informations</span>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
                       </p>
                       <p><strong>Starts from 400,000,000</strong></p>
                     </div>
@@ -236,11 +293,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <h4 class="h4">Sarai</h4>
                       <p class="mb-1">
                         <i class="bi bi-geo-alt"></i>
-                        <span> Location </span>
+                        <span> New Cairo </span>
                       </p>
                       <p class="mb-1">
                         <i class="bi bi-buildings"></i>
-                        <span>Informations</span>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
                       </p>
                       <p><strong>Starts from 400,000,000</strong></p>
                     </div>
@@ -255,11 +315,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <h4 class="h4">Sarai</h4>
                       <p class="mb-1">
                         <i class="bi bi-geo-alt"></i>
-                        <span> Location </span>
+                        <span> New Cairo </span>
                       </p>
                       <p class="mb-1">
                         <i class="bi bi-buildings"></i>
-                        <span>Informations</span>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
                       </p>
                       <p><strong>Starts from 400,000,000</strong></p>
                     </div>
@@ -274,11 +337,168 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <h4 class="h4">Sarai</h4>
                       <p class="mb-1">
                         <i class="bi bi-geo-alt"></i>
-                        <span> Location </span>
+                        <span> New Cairo </span>
                       </p>
                       <p class="mb-1">
                         <i class="bi bi-buildings"></i>
-                        <span>Informations</span>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> New Cairo </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span
+                          >Studio with garden , Stuido , Penthouse ,
+                          Aprements</span
+                        >
                       </p>
                       <p><strong>Starts from 400,000,000</strong></p>
                     </div>
@@ -312,7 +532,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             class="list-link flex-grow-1"
           >
             <div>
-              <i class="bi bi-house-fill"></i>
+              <i class="bi bi-building-check"></i>
               <span>List Company Properties</span>
             </div>
             <i class="bi bi-arrow-right"></i>
@@ -329,15 +549,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
             <div class="links">
               <a href="#">
-                <span>Link</span>
+                <span>Fifth Settlement Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>Sheikh Zayed Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>New Capital Apartments </span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -347,33 +567,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
             <div class="links">
               <a href="#">
-                <span>Link</span>
+                <span>Fifth Settlement Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>Sheikh Zayed Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>New Capital Apartments </span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
           <div class="property-list">
             <h4 class="h4 mb-3">Compounds</h4>
-
             <div class="links">
               <a href="#">
-                <span>Link</span>
+                <span>Fifth Settlement Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>Sheikh Zayed Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>New Capital Apartments </span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -383,15 +602,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
             <div class="links">
               <a href="#">
-                <span>Link</span>
+                <span>Fifth Settlement Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>Sheikh Zayed Apartments</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
               <a href="#">
-                <span>Link</span>
+                <span>New Capital Apartments </span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
