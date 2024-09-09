@@ -17,6 +17,21 @@
       crossorigin="anonymous"
     ></script>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
+
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -71,7 +86,8 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                User
+                <i class="bi bi-person"></i>
+                <span> User </span>
               </a>
               <ul class="dropdown-menu dropdown-user p-3">
                 <h4 class="h4 mb-2">Login</h4>
@@ -164,5 +180,126 @@
         </div>
       </div>
     </div>
+    <!-- Compound Guide -->
+    <div class="compound-guide-section">
+      <div class="container-xxl">
+        <h4 class="h4 mb-3">Compound Guide</h4>
+
+        <div class="compound-guide-slider">
+          <div id="splide" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> Location </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span>Informations</span>
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> Location </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span>Informations</span>
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> Location </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span>Informations</span>
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> Location </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span>Informations</span>
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="slider-item">
+                    <div class="sidler-img">
+                      <img src="hero-img.jpeg" alt="" />
+                    </div>
+                    <div class="px-3">
+                      <h4 class="h4">Sarai</h4>
+                      <p class="mb-1">
+                        <i class="bi bi-geo-alt"></i>
+                        <span> Location </span>
+                      </p>
+                      <p class="mb-1">
+                        <i class="bi bi-buildings"></i>
+                        <span>Informations</span>
+                      </p>
+                      <p><strong>Starts from 400,000,000</strong></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- List -->
+    <script>
+      var splide = new Splide(".splide", {
+        rewind: true,
+        pagination: false,
+        autoWidth: true,
+        autoplay: true,
+      });
+
+      splide.mount();
+    </script>
   </body>
 </html>
