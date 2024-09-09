@@ -141,6 +141,65 @@ input[type="radio"]:checked + label {
   margin-right: 0;
 }
 
+.list {
+  display: flex;
+  gap: 5rem;
+}
+
+.list-link {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  font-size: 22px;
+  max-width: 450px;
+  color: var(--color-primary);
+  padding: 1rem;
+  transition: 0.3s all ease-in-out;
+  border-radius: 9px;
+}
+
+.list-link:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Smooth shadow */
+}
+
+.list-link div {
+  display: flex;
+  gap: 1rem;
+}
+
+.list-link div span {
+  color: var(--color-secondary);
+}
+.list-link i:last-child {
+  color: var(--color-secondary);
+  margin-left: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.property-list .links a {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.property-list .links a:hover {
+  color: var(--color-primary);
+}
+
+.proprites-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
 @media only screen and (max-width: 991.98px) {
   .dropdown-user {
     width: 100%;
@@ -161,14 +220,24 @@ input[type="radio"]:checked + label {
   .slider-item {
     width: 270px;
   }
-}
+  .list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-@media only screen and (min-width: 991.98px) {
-  .compound-guide-section .container-xxl {
-    padding: 0;
+  .list-link {
+    padding: 0.5rem;
+  }
+
+  .proprites-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
-.compound-guide-section {
-  height: 1000px;
+@media only screen and (max-width: 575.98px) {
+  .proprites-list {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
