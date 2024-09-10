@@ -43,8 +43,18 @@
 }
 
 .bi-geo-alt,
-.bi-buildings {
+.bi-buildings,
+.bi-tags-fill,
+.bi-geo-alt-fill,
+.bi-buildings-fill,
+.bi-cash,
+.bi-water {
   color: var(--color-primary);
+}
+
+input {
+  box-shadow: none !important;
+  border: 1px solid var(--color-primary) !important;
 }
 
 .activities-btn {
