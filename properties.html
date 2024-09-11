@@ -31,6 +31,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 "
       rel="stylesheet"
     />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="properties.css" />
@@ -388,7 +390,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
 
     <!-- Nav -->
-     <div class="container-xxl">
+     <div class="container-xxl mb-5">
 
        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb"></nav>
        <ol class="breadcrumb">
@@ -398,6 +400,599 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
          <li class="breadcrumb-item active" aria-current="page">Properties For rent</li>
         </ol>
       </nav>
+     </div>
+
+     <!-- Content -->
+     <div class="container-xxl">
+      <!-- Content head & filter -->
+     <div class="d-flex flex-column flex-lg-row justify-content-between mb-3 gap-2">
+    <div>
+      <h4>Properties For rent</h4>
+      <p>Best Properties For rent , compare with prices and photos between 57,854 Properties of different areas. Search using the map and contact the seller directly</p>
     </div>
+
+ <div class="dropdown">
+      <button class="btn btn-primary w-100 w-lg-auto dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-sort-down-alt"></i>
+        <span id="dropdownMenuButton" >Default</span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#" data-value="Defult">Defult</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Newest First">Newest First</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Lowest Price">Lowest Price</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Highest Price">Highest Price</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Smallest Area">Smallest Area</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Largest Area">Largest Area</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Most Viewed">Most Viewed</a></li>
+        <li><a class="dropdown-item" href="#" data-value="Most Contacted">Most Contacted</a></li>
+      </ul>
+    </div>
+
+
+     </div>
+
+     <!-- Pagination -->
+     <div class="pagination-container mb-5">
+   
+
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+     <!-- Pagination Card -->
+     <div class="card property-card">
+      <!-- User profile -->
+      <div class="user-profile">
+        <img src="assets/person-circle.svg" alt="">
+      </div>
+     <!-- Property images -->
+     <div class="splide splide-container ">
+       <div class="splide__track">
+         <ul class="splide__list">
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+           <li class="splide__slide property-img"><img src="hero-img.jpeg" alt=""></li>
+         </ul>
+       </div>
+     </div>
+   <!-- Property info -->
+     <a href="#" class="property-info p-3 text-decoration-none c">
+       <h5 class="h5 property-price" >45,000EGP</h5>
+       <p class="property-details" >Spacious 5-Bedroom Apartment with Garden View and Modern Amenities</p>
+       <p class="property-location">
+     <i class="bi bi-geo-alt-fill"></i>
+   <span> Greater Cario / Ahmed El Rashidy ST</span>
+       </p>
+       <div class="property-features d-flex gap-3">
+         <span  >
+         <img src="assets/size.d7862946.svg" alt="">
+           <span>350 &#x33A1;</span>
+         </span>
+         <span>
+         <img src="assets/bedroom.81247afe.svg" alt="">
+           <span>5</span>
+         </span>
+         <span>
+         <img src="assets/bathroom.d23f3213.svg" alt="">
+         <span>5</span>
+         </span>
+       </div>
+     </a>
+     </div>
+
+
+
+     
+     </div>
+
+    </div>
+
+    <!-- Pagination Control -->
+
+    <div class="container-xxl d-flex justify-content-center ">
+      
+     <nav aria-label="Page navigation example ">
+     <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+     </ul>
+     </nav>
+    </div>
+
+
+    </div>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Select all elements with the class 'splide'
+  const sliders = document.querySelectorAll('.splide');
+
+  // Initialize a new Splide instance for each slider
+  sliders.forEach((slider) => {
+    new Splide(slider, {
+      type   : 'loop',
+      perPage: 1,
+      perMove: 1,
+      pagination: true,
+    }).mount();
+  });
+});
+
+ document.addEventListener('DOMContentLoaded', function () {
+      const dropdownItems = document.querySelectorAll('.dropdown-item');
+      const dropdownButton = document.getElementById('dropdownMenuButton');
+
+      dropdownItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          const value = this.getAttribute('data-value');
+          dropdownButton.textContent = value;
+        });
+      });
+    });
+
+</script>
   </body>
 </html>
