@@ -46,6 +46,14 @@
   width: 100%;
 }
 
+.property-related {
+  max-width: 400px;
+}
+
+.property-related .property-img {
+  height: 200px;
+}
+
 @media only screen and (max-width: 1200px) {
   .property-content {
     grid-template-columns: 1fr;
