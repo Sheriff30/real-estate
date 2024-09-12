@@ -57,7 +57,7 @@
   display: flex;
 }
 
-.card .splide__slide {
+.property-card .splide__slide {
   height: 200px;
 }
 

@@ -48,7 +48,9 @@
 .bi-geo-alt-fill,
 .bi-buildings-fill,
 .bi-cash,
-.bi-water {
+.bi-water,
+.bi-share-fill,
+.bi-heart-fill {
   color: var(--color-primary);
 }
 
