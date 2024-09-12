@@ -35,6 +35,19 @@ form {
   gap: 20px;
 }
 
+.logo2 {
+  color: var(--color-primary);
+}
+
+.switch {
+  text-align: center;
+}
+
+.switch a {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1000px) {
   .main-img {
     display: none;
