@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #ffcd11;
+  --color-secondary: #000000;
+  --color-black: #000000;
+  --color-white: #fff;
+  --color-primary-rgb: 255, 205, 17;
+  --color-secondary-rgb: 0, 0, 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.main-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s all ease-in-out;
+}
+
+.main-img:hover img {
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-img {
+    display: none;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    gap: 0;
+  }
+}

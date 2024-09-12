@@ -56,6 +56,10 @@
 
 input {
   box-shadow: none !important;
+  border: none;
+}
+
+input:focus {
   border: 1px solid var(--color-primary) !important;
 }
 
