@@ -11,7 +11,7 @@
   overflow: hidden;
   border-radius: 9px;
   border: 1px solid var(--color-primary);
-  max-height: 600px;
+  max-height: 450px;
 }
 
 .highlights {
@@ -28,15 +28,22 @@
 .user {
   width: 4.5rem;
   height: 4.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
 }
 
 .profile-link {
   color: var(--color-primary);
+
   font-weight: bold;
 }
 
 .related-slider {
   display: grid;
+}
+
+.adv img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
