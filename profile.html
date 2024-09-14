@@ -368,7 +368,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       const profileImage = document.getElementById("profileImage");
       const uploadInput = document.getElementById("uploadInput");
 
-      uploadBtn.addEventListener("click", () => {
+      uploadBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent form submission
         uploadInput.click();
       });
 
@@ -377,13 +378,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         if (file) {
           const reader = new FileReader();
           reader.onload = function (event) {
-            profileImage.src = event.target.result;
+            profileImage.src = event.target.result; // Set the selected image
           };
           reader.readAsDataURL(file);
         }
       });
 
-      deleteBtn.addEventListener("click", () => {
+      deleteBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent form submission
         profileImage.src = "default-profile.png"; // Reset to default image
       });
     </script>
