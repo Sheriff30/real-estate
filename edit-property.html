@@ -50,7 +50,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         width: 200px;
         height: 200px;
         object-fit: cover;
-        margin-top: 30px;
       }
 
       .image-preview {
@@ -83,6 +82,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         button {
           grid-column: 1/-1;
           justify-self: auto;
+        }
+
+        .image-preview img {
+          width: 100px;
+          height: 100px;
         }
       }
     </style>
@@ -255,6 +259,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           />
         </div>
 
+        <!-- images preview -->
+        <div class="mb-3">
+          <label for="imageUpload" class="form-label">Images preview:</label>
+          <div class="image-preview" id="imagePreview">
+            <img src="hero-img.jpeg" alt="alt" />
+          </div>
+        </div>
+
         <!-- Area -->
         <div class="mb-3">
           <label for="area" class="form-label"> Area:</label>
@@ -299,6 +311,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             type="number"
           />
         </div>
+
         <!-- Description -->
         <div class="mb-3">
           <label for="phone" class="form-label">Description:</label>
@@ -367,7 +380,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </select>
         </div>
 
-        <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-primary">Publish</button>
       </form>
     </main>
 
