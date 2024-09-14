@@ -44,66 +44,46 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         --color-secondary-rgb: 0, 0, 0;
       }
 
-      textarea:focus {
-        box-shadow: none !important;
-        border: 1px solid var(--color-primary) !important;
+      .line {
+        max-width: 100%;
+        width: 80px;
+        height: 1px;
+        background-color: var(--color-secondary);
       }
 
       main {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        align-items: start;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
       }
-
-      .profile-img-edit {
-        max-width: 200px;
-      }
-
-      .profile-img-edit img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 2px solid var(--color-primary);
-        object-fit: cover;
-      }
-      .profile-picture {
-        width: 180px;
-        height: 180px;
+      .profile-picture-container {
         overflow: hidden;
+        max-width: 300px;
+        height: 300px;
+        margin: 0 auto;
         border-radius: 50%;
         border: 2px solid var(--color-primary);
       }
 
-      .profile-picture img {
+      .profile-picture-container img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
 
-      .edit-container {
-        display: grid;
-        grid-template-columns: 180px 1fr;
-
-        align-items: center;
-      }
-
-      .social-links i {
+      .profile-card {
+        text-decoration: none;
         color: var(--color-secondary);
+        transition: all 0.3s ease-in;
       }
 
-      @media only screen and (max-width: 991.98px) {
-        main {
-          grid-template-columns: 1fr;
-        }
+      .profile-card:hover {
+        transform: scale(1.1);
+      }
 
-        .edit-container {
-          grid-template-columns: 1fr;
-        }
-
-        .profile-img-edit {
-          width: 100%;
-          max-width: 100%;
-        }
+      .page-link {
+        color: var(--color-secondary) !important;
+        box-shadow: none !important;
       }
     </style>
   </head>
@@ -247,147 +227,149 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
     </nav>
-
-    <!-- Profile page & edit -->
-    <main class="container-xxl gap-3 mb-5">
-      <!-- Profile -->
-      <div class="card p-3">
-        <div class="d-flex flex-column gap-3 align-items-center">
-          <!-- Profile Pic -->
-          <div class="profile-picture">
-            <img src="hero-img.jpeg" alt="Profile picture" />
-          </div>
-          <span class="h3">Kevin Anderson</span>
-          <div class="social-links d-flex gap-3">
-            <a href="#">
-              <i class="bi bi-twitter h4"></i>
-            </a>
-            <a href="#">
-              <i class="bi bi-facebook h4"></i>
-            </a>
-            <a href="#">
-              <i class="bi bi-instagram h4"></i>
-            </a>
-            <a href="#">
-              <i class="bi bi-linkedin h4"></i>
-            </a>
-          </div>
-        </div>
+    <!-- team title -->
+    <div class="container-xxl mb-5">
+      <div
+        class="team-header d-flex justify-content-center gap-3 align-items-center"
+      >
+        <div class="line"></div>
+        <p class="h4">Team</p>
+        <div class="line"></div>
       </div>
-      <!-- Edit Profile -->
-      <form class="card p-3">
-        <h3 class="h3 mb-5">Edit Profile</h3>
-
-        <!-- Profile Image -->
-        <div class="align-items-center edit-container mb-5">
-          <p class="h5">Profile Image</p>
-          <div class="profile-img-edit d-flex flex-column align-items-center">
-            <img
-              src="hero-img.jpeg"
-              alt="Profile Image"
-              id="profileImage"
-              class="mb-3"
-            />
-            <div class="d-flex gap-3">
-              <button id="uploadBtn" class="btn btn-primary">
-                <i class="bi bi-pencil-square"></i>
-              </button>
-              <button id="deleteBtn" class="btn btn-secondary">
-                <i class="bi bi-trash3"></i>
-              </button>
-            </div>
-          </div>
-          <input type="file" id="uploadInput" style="display: none" />
+    </div>
+    <!-- Team page -->
+    <main class="container-xxl mb-5">
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
 
-        <!-- Full Name -->
-        <div class="edit-container mb-3">
-          <label for="name" class="h5">Full name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Full name"
-          />
-        </div>
-        <!-- About -->
-        <div class="edit-container mb-3">
-          <label for="About" class="h5">About</label>
-          <textarea
-            type="text"
-            class="form-control"
-            id="About"
-            placeholder="About"
-          ></textarea>
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
 
-        <!-- Company -->
-        <div class="edit-container mb-3">
-          <label for="company" class="h5">Company</label>
-          <input
-            type="text"
-            class="form-control"
-            id="company"
-            placeholder="Company"
-          />
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
-        <!-- Job -->
-        <div class="edit-container mb-3">
-          <label for="job" class="h5">Job</label>
-          <input type="text" class="form-control" id="job" placeholder="Job" />
+
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
-        <!-- Country -->
-        <div class="edit-container mb-3">
-          <label for="country" class="h5">Country</label>
-          <input
-            type="text"
-            class="form-control"
-            id="country"
-            placeholder="Country"
-          />
+
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
-        <!-- Address -->
-        <div class="edit-container mb-3">
-          <label for="address" class="h5">Address</label>
-          <input
-            type="text"
-            class="form-control"
-            id="address"
-            placeholder="Address"
-          />
+
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
-        <!-- Submit btn -->
-        <div class="d-flex justify-content-end">
-          <button class="btn btn-primary">Edit Profile</button>
+
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
         </div>
-      </form>
+
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
+      <a href="#" class="profile-card">
+        <div class="profile-picture-container mb-3">
+          <img src="/hero-img.jpeg" alt="Profile picture" />
+        </div>
+
+        <p class="h4 text-center mb-3">Walter White</p>
+
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia
+          ducimus hic modi esse officia earum, aperiam aliquid repellat unde
+          voluptates, quis molestiae facilis accusamus, dolores vel
+          necessitatibus sequi deserunt!
+        </p>
+      </a>
     </main>
-    <script>
-      const uploadBtn = document.getElementById("uploadBtn");
-      const deleteBtn = document.getElementById("deleteBtn");
-      const profileImage = document.getElementById("profileImage");
-      const uploadInput = document.getElementById("uploadInput");
-
-      uploadBtn.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent form submission
-        uploadInput.click();
-      });
-
-      uploadInput.addEventListener("change", (e) => {
-        const file = e.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = function (event) {
-            profileImage.src = event.target.result; // Set the selected image
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-
-      deleteBtn.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent form submission
-        profileImage.src = "default-profile.png"; // Reset to default image
-      });
-    </script>
+    <div class="container-xxl d-flex justify-content-center mb-3">
+      <nav aria-label="Page navigation example ">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
