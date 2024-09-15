@@ -47,8 +47,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       }
 
       .image-preview img {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
       }
 
@@ -56,6 +56,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        object-fit: cover;
       }
 
       textarea:focus {
@@ -89,6 +90,35 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           width: 100px;
           height: 100px;
         }
+      }
+
+      .image-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .img-container {
+        position: relative;
+      }
+
+      .img-container img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      .remove-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: var(--color-secondary);
+        color: var(--color-white);
+        border-radius: 50%;
+      }
+
+      .bi-x-lg {
+        font-size: 1rem;
       }
     </style>
   </head>
@@ -234,7 +264,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </nav>
 
     <main class="container-xxl">
-      <div class="p h4 text-center mb-5">Edit property</div>
+      <div class="p h4 text-center mb-5">Property Creation</div>
 
       <form action="" class="mb-5">
         <!-- Full name -->
@@ -249,12 +279,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
         <!--images  -->
         <div class="mb-3">
-          <label for="imageUpload" class="form-label">Images:</label>
+          <label for="imageUpload" class="form-label">Upload Images:</label>
           <input
             class="form-control"
             type="file"
             id="imageUpload"
-            name="images"
             accept="image/*"
             multiple
           />
@@ -262,9 +291,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <!-- images preview -->
         <div class="mb-3">
-          <label for="imageUpload" class="form-label">Images preview:</label>
+          <label class="form-label">Image Preview:</label>
           <div class="image-preview" id="imagePreview">
-            <img src="hero-img.jpeg" alt="alt" />
+            <img src="hero-img.jpeg" alt="" />
           </div>
         </div>
 
@@ -388,21 +417,71 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script>
       const imageUpload = document.getElementById("imageUpload");
       const imagePreview = document.getElementById("imagePreview");
+      let fileList = [];
 
-      imageUpload.addEventListener("change", function (event) {
-        const files = event.target.files;
-        imagePreview.innerHTML = ""; // Clear previous images
+      function updateImagePreview() {
+        imagePreview.innerHTML = ""; // Clear previous previews
 
-        for (const file of files) {
+        fileList.forEach((file, index) => {
           const reader = new FileReader();
           reader.onload = function (e) {
+            // Create container for image and remove button
+            const imgContainer = document.createElement("div");
+            imgContainer.classList.add("img-container");
+
+            // Create image element
             const imgElement = document.createElement("img");
             imgElement.src = e.target.result;
-            imagePreview.appendChild(imgElement);
+
+            // Create remove button with icon
+            const removeButton = document.createElement("button");
+            removeButton.classList.add(
+              "btn",
+              "btn-danger",
+              "btn-sm",
+              "remove-btn"
+            );
+            removeButton.innerHTML = '<i class="bi bi-x-lg"></i>'; // Use icon instead of text
+
+            // Add event listener to remove image on click
+            removeButton.addEventListener("click", function () {
+              fileList.splice(index, 1); // Remove the file from the list
+              updateImagePreview(); // Update the preview
+              updateFileInput(); // Update the file input element
+            });
+
+            // Append image and button to container
+            imgContainer.appendChild(imgElement);
+            imgContainer.appendChild(removeButton);
+
+            // Append container to preview
+            imagePreview.appendChild(imgContainer);
           };
           reader.readAsDataURL(file);
-        }
-      });
+        });
+      }
+
+      function handleFileInputChange() {
+        const files = Array.from(imageUpload.files);
+        fileList = files; // Update the file list with the new files
+        updateImagePreview(); // Refresh the image previews
+        updateFileInput(); // Update the file input element
+      }
+
+      function updateFileInput() {
+        // Create a new DataTransfer object to manage files
+        const dataTransfer = new DataTransfer();
+
+        // Add the files from fileList to the DataTransfer object
+        fileList.forEach((file) => {
+          dataTransfer.items.add(file);
+        });
+
+        // Update the file input element's files
+        imageUpload.files = dataTransfer.files;
+      }
+
+      imageUpload.addEventListener("change", handleFileInputChange);
     </script>
   </body>
 </html>
