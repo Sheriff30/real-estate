@@ -37,7 +37,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-xxl">
         <a class="navbar-brand" href="#">Real Estate CO.</a>
         <button
@@ -53,58 +53,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
                 <i class="bi bi-search"></i>
                 <span>Search</span>
               </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="properties.html">Properties</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
                 <i class="bi bi-globe"></i>
                 <span>Know</span>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
                 <i class="bi bi-list-task"></i>
                 <span>List</span>
               </a>
@@ -119,59 +81,69 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </ul>
             </li>
           </ul>
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="bi bi-person"></i>
-                <span>User</span>
-              </a>
-              <ul class="dropdown-menu dropdown-user p-3">
-                <h4 class="h4 mb-2">Login</h4>
-                <p>Add ads, notes, favorites and more..</p>
+          <div
+            class="d-flex gap-2 gap-lg-1 align-items-start align-items-lg-center"
+          >
+            <a href="#" class="user-img mt-1 mt-lg-0">
+              <img
+                src="assets/blank-profile-picture-973460_640.webp"
+                alt="user img"
+              />
+            </a>
 
-                <div class="d-grid gap-2 mb-3">
-                  <a href="login.html" class="btn btn-primary" role="button">
-                    Login
-                  </a>
-                  <a
-                    href="register.html"
-                    class="btn btn-secondary"
-                    role="button"
-                  >
-                    Sign up
-                  </a>
-                </div>
-                <li><hr class="dropdown-divider" /></li>
-                <p>My Activities</p>
-                <div class="d-grid gap-2 mb-3">
-                  <a
-                    href="#"
-                    class="btn toggle-btn activities-btn"
-                    role="button"
-                    data-bs-toggle="button"
-                  >
-                    <i class="bi bi-heart"></i>
-                    <span>My Favourite</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="btn toggle-btn activities-btn"
-                    role="button"
-                    data-bs-toggle="button"
-                  >
-                    <i class="bi bi-sticky"></i>
-                    <span>My Notes</span>
-                  </a>
-                </div>
-              </ul>
-            </li>
-          </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle user-icon"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>User</span>
+                </a>
+                <ul class="dropdown-menu dropdown-user p-3">
+                  <h4 class="h4 mb-2">Login</h4>
+                  <p>Add ads, notes, favorites and more..</p>
+
+                  <div class="d-grid gap-2 mb-3">
+                    <a href="login.html" class="btn btn-primary" role="button">
+                      Login
+                    </a>
+                    <a
+                      href="register.html"
+                      class="btn btn-secondary"
+                      role="button"
+                    >
+                      Sign up
+                    </a>
+                  </div>
+                  <li><hr class="dropdown-divider" /></li>
+                  <p>My Activities</p>
+                  <div class="d-grid gap-2 mb-3">
+                    <a
+                      href="#"
+                      class="btn toggle-btn activities-btn"
+                      role="button"
+                      data-bs-toggle="button"
+                    >
+                      <i class="bi bi-heart"></i>
+                      <span>My Favourite</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn toggle-btn activities-btn"
+                      role="button"
+                      data-bs-toggle="button"
+                    >
+                      <i class="bi bi-sticky"></i>
+                      <span>My Notes</span>
+                    </a>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

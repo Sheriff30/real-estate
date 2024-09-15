@@ -54,6 +54,16 @@
   height: 200px;
 }
 
+.bi-pencil,
+.bi-trash3-fill {
+  color: var(--color-primary);
+  font-size: 18px;
+  padding: 0;
+}
+
+.edit-remove-section .btn {
+  padding: 5px;
+}
 @media only screen and (max-width: 1200px) {
   .property-content {
     grid-template-columns: 1fr;
