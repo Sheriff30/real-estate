@@ -36,6 +36,10 @@ form {
 }
 
 .logo2 {
+  color: var(--color-black);
+}
+
+.logo-main {
   color: var(--color-primary);
 }
 
