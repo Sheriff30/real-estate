@@ -184,50 +184,34 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <!-- Search & filters -->
     <div class="form-group mb-3">
       <div class="container-xxl d-flex flex-column flex-lg-row gap-1">
-        <!-- Sale /Rent Filter -->
-        <div
-          class="btn-group border"
-          role="group"
-          aria-label="Basic radio toggle button group"
-        >
-          <input
-            type="radio"
-            class="btn-check"
-            name="btnradio"
-            id="btnradio1"
-            autocomplete="off"
-            checked
-          />
-          <label class="btn btn-outline-primary" for="btnradio1">
-            <i class="bi bi-cash-stack"></i> <span> For Sale </span>
-          </label>
-
-          <input
-            type="radio"
-            class="btn-check"
-            name="btnradio"
-            id="btnradio2"
-            autocomplete="off"
-          />
-          <label class="btn btn-outline-primary" for="btnradio2">
-            <i class="bi bi-coin"></i>
-            <span> For Rent </span>
-          </label>
-        </div>
+  
         <!-- Search Form -->
-        <form class="d-flex flex-grow-1" role="search">
-          <div class="input-group">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="bi bi-geo-alt"></i>
-            </span>
-            <input
-              type="search"
-              class="form-control"
-              placeholder="City or Neighborhood or Street name"
-              aria-label="Search"
-            />
-          </div>
-        </form>
+         <form class="d-flex gap-3 flex-grow-1" role="search">
+         
+            <div class="custom-select">
+  <div class="selected">Sale</div>
+  <div class="options-container">
+    <div class="option" data-value="sale">Sale</div>
+    <div class="option" data-value="rent">Rent</div>
+  </div>
+
+  <!-- YOU WILL TAKE THE VALUE OF THIS INPUT STANLEY!!!! -->
+  <input type="hidden" name="property-type" id="property-type" value="sale">
+</div>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-geo-alt"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control "
+                  placeholder="City or Neighborhood or Street name"
+                  aria-label="Search"
+                />
+              </div>
+
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
         <!-- Filter btn -->
         <button type="button" class="btn btn-primary filter-btn">
           <i class="bi bi-filter-left"></i>
@@ -994,5 +978,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 </script>
+  <script>
+      document.querySelector('.selected').addEventListener('click', function () {
+  document.querySelector('.options-container').classList.toggle('show');
+});
+
+document.querySelectorAll('.option').forEach(option => {
+  option.addEventListener('click', function () {
+    const value = this.getAttribute('data-value');
+    const displayText = this.textContent;
+    
+    // Set the value to hidden input
+    document.querySelector('#property-type').value = value;
+    
+    // Update the selected text
+    document.querySelector('.selected').textContent = displayText;
+    
+    // Close the dropdown
+    document.querySelector('.options-container').classList.remove('show');
+  });
+});
+
+window.addEventListener('click', function (e) {
+  if (!e.target.matches('.selected')) {
+    document.querySelector('.options-container').classList.remove('show');
+  }
+});
+    </script>
   </body>
 </html>
